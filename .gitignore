@@ -130,3 +130,9 @@ dmypy.json
 
 # Sandbox files
 tmp/
+
+# Raw input data
+data-populator/.data
+# Any temporary/work files
+
+ *tmp/*
