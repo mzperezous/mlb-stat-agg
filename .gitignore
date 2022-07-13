@@ -129,10 +129,10 @@ dmypy.json
 .pyre/
 
 # Local data directories
-data-populator/*.data
+*.data/
 
 # Any temporary/work files
-*tmp/*
+*tmp/
 
 # JetBrains IDE	Configuration directories
 *.idea/
