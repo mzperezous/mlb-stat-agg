@@ -128,11 +128,11 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Sandbox files
-tmp/
+# Local data directories
+data-populator/*.data
 
-# Raw input data
-data-populator/.data
 # Any temporary/work files
+*tmp/*
 
- *tmp/*
+# JetBrains IDE	Configuration directories
+*.idea/
