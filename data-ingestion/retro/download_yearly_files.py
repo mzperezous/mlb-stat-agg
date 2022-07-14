@@ -17,10 +17,10 @@ def download_year_eve(year):
     thisdir = os.path.dirname(os.path.abspath(__file__))
     basename = f'{year}eve.zip'
 
-    tmpdir = f'{thisdir}/tmp'
-    filename = f'{tmpdir}/{basename}'
-    if not os.path.isfile(tmpdir):
-        os.makedirs(tmpdir, exist_ok=True)
+    zipdir = f'{thisdir}/.zip'
+    filename = f'{zipdir}/{basename}'
+    if not os.path.isfile(zipdir):
+        os.makedirs(zipdir, exist_ok=True)
     url = f'https://www.retrosheet.org/events/{basename}'
 
     datadir = f'{thisdir}/.data'

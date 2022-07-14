@@ -5,8 +5,8 @@ import os
 def test_download_year_eve():
     outdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-    tmpdir = f'{outdir}/tmp'
-    filename = f'{outdir}/tmp/2005eve.zip'
+    zipdir = f'{outdir}/.zip'
+    filename = f'{zipdir}/2005eve.zip'
 
     datadir = f'{outdir}/.data/2005'
 
@@ -14,8 +14,8 @@ def test_download_year_eve():
     if os.path.isfile(filename):
         os.remove(filename)
     else:
-        if not os.path.isfile(tmpdir):
-            os.makedirs(tmpdir, exist_ok=True)
+        if not os.path.isfile(zipdir):
+            os.makedirs(zipdir, exist_ok=True)
 
     if not os.path.isfile(datadir):
         os.makedirs(datadir, exist_ok=True)
