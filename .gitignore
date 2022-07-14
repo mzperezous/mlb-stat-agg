@@ -130,6 +130,7 @@ dmypy.json
 
 # Local data directories
 *.data/
+*.zip/
 
 # Any temporary/work files
 *tmp/
